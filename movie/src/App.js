@@ -26,8 +26,11 @@ function App() {
 
 
   return <div>
-    {movies.length > 0 && movies.map((movie) =>
-      <Movie />)}</div>;
+    {movies.length > 0 && movies.map[(movie) =>
+      <Movie key={movie.id} data={movie} />]}
+
+  </div>
+    ;
 }
 
 
